@@ -3,57 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Eko Wahyu</title>
+  <title>Portfolio Eko Wahyu Prasetyo</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
+    }
+
+    body {
       background: #f4f6f8;
       color: #333;
     }
 
     header {
-      background: #0b1f3a;
+      background: linear-gradient(135deg, #0b1f3a, #1e3c72);
       color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 70px 20px;
+    }
+
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 40px;
+      font-size: 38px;
     }
 
     header p {
       margin-top: 10px;
       font-size: 18px;
-      color: #cfd8e3;
+      color: #dbe4f0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #ff9800;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e68900;
+      transform: scale(1.05);
     }
 
     section {
       max-width: 900px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 25px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease;
     }
 
     h2 {
       color: #0b1f3a;
+      margin-bottom: 15px;
     }
 
     ul {
-      line-height: 1.8;
+      line-height: 1.9;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background: #0b1f3a;
       color: white;
       margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
@@ -61,24 +98,29 @@
 <body>
 
 <header>
+  <!-- GANTI NAMA FOTO NANTI -->
+  <img src="https://i.imgur.com/4Z7DzpT.png" class="profile">
+
   <h1>Eko Wahyu</h1>
   <p>Junior Cloud & IT Enthusiast ☁️</p>
+
+  <a href="https://github.com/reyhanalfa83-droid" class="btn">Lihat GitHub</a>
 </header>
 
 <section>
   <h2>Tentang Saya</h2>
   <p>
     Saya sedang belajar menjadi IT Engineer dengan fokus pada Cloud Computing,
-    Linux, dan AWS. Saat ini saya sudah berhasil membuat server website di AWS EC2
-    dan deploy website menggunakan GitHub Pages.
+    Linux, dan AWS. Saya telah berhasil membuat server website di AWS EC2
+    serta deploy website menggunakan GitHub Pages sebagai portfolio online.
   </p>
 </section>
 
 <section>
   <h2>Skill</h2>
   <ul>
-    <li>Linux dasar</li>
-    <li>AWS EC2 deployment</li>
+    <li>Linux dasar & command line</li>
+    <li>Deploy website di AWS EC2</li>
     <li>GitHub & GitHub Pages</li>
     <li>HTML & web dasar</li>
   </ul>
@@ -99,8 +141,9 @@
 </section>
 
 <footer>
-  <p>© 2026 Eko Wahyu - Portfolio IT</p>
+  <p>© 2026 Eko Wahyu - Portfolio Cloud Engineer</p>
 </footer>
 
 </body>
 </html>
+
